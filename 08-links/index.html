@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        *, *::before, *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            aspect-ratio: 16/9;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-container{
+            padding: 20px 0;
+            background-image: linear-gradient(45deg, hsl(135, 60%, 90%), hsl(145, 80%, 50%)) ;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .courses{
+            display: flex;
+            gap: 15px 20px;
+            max-width: 80%;
+            margin: 10px auto;
+        }
+        .courses div{
+            padding: 5px;
+            box-shadow: 0 0 3px orange;
+        }
+        .courses div img{
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .send-email{
+            padding: 7px 16px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: darkred;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+    <title>Links in HTML</title>
+</head>
+<body>
+    <div class="container">
+         <div class="title-container">
+             <h1>Links in HTML</h1>
+         </div>
+        <div class="content">
+            <div class="courses">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/langfr-220px-React-icon.svg.png"
+                         alt="react js logo">
+                    <p>In you want to learn React JS,
+                        <a href="https://fr.react.dev/" title="React official website">click here</a></p>
+                </div>
+                <div>
+                    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*R1mfXLP9edcArZXwmGbGag.jpeg"
+                         alt="angular">
+                    <p>Learn Angular on <a href="https://angular.fr/">angular.fr</a></p>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/langfr-220px-Svelte_Logo.svg.png"
+                         alt="svelte js">
+                    <p>Learn Svelte js <a href="https://svelte.dev/">here</a></p>
+                </div>
+            </div>
+            <a class="send-email" href="mailto:bernardkonan96@gmail">Send email</a>
+        </div>
+    </div>
+
+</body>
+</html>
