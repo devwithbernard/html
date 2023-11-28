@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .internal{
+            padding: 10px;
+            background-color: lightcyan;
+            font-family: "Roboto Medium", "Victor Mono Medium", sans-serif;
+        }
+        .internal > p{
+            line-height: 1.5;
+        }
+        .element{
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Css in HTML</title>
+</head>
+<body>
+<div style="max-width: 70%; margin: 0 auto">
+    <!-- Inline CSS -->
+    <div class="inline" style="margin-bottom: 20px; padding: 10px; background-color: lightgoldenrodyellow">
+        <h2 style="font-weight: 600; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif; font-size:
+        1.5rem">Inline CSS</h2>
+        <p style="line-height: 1.5; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif">An inline CSS is
+        used to apply a unique style to a single HTML element.</p>
+        <p style="line-height: 1.5; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif">An inline CSS
+        use the <span style="color: red">style</span> attribute of an HTML element.</p>
+        <p style="line-height: 1.5; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif">The following
+            example sets the color of the <span style="color: red">&lt;h1&gt;</span> element to blue, and the text
+            color of the <span style="color: red">&lt;p&gt;</span> element to red:
+        </p>
+        <div style="background-color: white; color: black; border-left: 3px solid green; padding: 6px 15px">
+            <p style="line-height: 1.5; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif">
+                <span style="color: darkred">&lt;h1</span>
+                <span style="color: red">style</span><span style="color: blue">&#61;"color:blue;"</span><span
+                    style="color: darkred"
+            >&gt;</span><span>A Blue
+                Heading</span><span>
+                    <span style="color: blue !important;">&lt;</span><span style="color: darkred">/h1&gt;</span>
+                </span>
+            </p>
+            <p style="line-height: 1.5; font-family: 'Roboto Medium', 'Victor Mono Medium', sans-serif">
+                <span style="color: darkred">&lt;p</span>
+                <span style="color: red">style</span><span style="color: blue">&#61;"color:red;"</span><span
+                    style="color: darkred"
+            >&gt;</span><span>A red paragraph</span><span>
+                    <span style="color: blue !important;">&lt;</span><span style="color: darkred">/p&gt;</span>
+                </span>
+            </p>
+        </div>
+    </div>
+    <!-- Internal CSS -->
+    <div class="internal">
+        <h2>Internal CSS</h2>
+        <p>An internal CSS is used to define a style for a single HTML page.</p>
+        <p>An internal CSS is defined in the <span class="element">&lt;head&gt;</span> section HTML page, within a
+            <span class="element">&lt;style&gt;</span> element.</p>
+    </div>
+    <!-- External CSS -->
+    <div class="external">
+        <h2>External CSS</h2>
+        <p>An external style sheet is used to define the style for many HTML pages.</p>
+        <p>To use an external style sheet, add a link to it in the <span class="element">&lt;head&gt;</span> section
+            of each HTML pages:
+        </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.external{
+    font-family: "Roboto Medium", "Victor Mono Medium", sans-serif;
+    padding: 10px;
+    background-color: lightgrey;
+    margin: 20px 0;
+}
+p{
+    line-height: 1.5;
+}
