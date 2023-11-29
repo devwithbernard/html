@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h2>Gallery</h2>
+      </header>
+      <div id="app">
+        <input class="form-control" type="text" placeholder="search image ...">
+        <p id="found-items-number"></p>
+        <div id="search-result" >
+
+        </div>
+        <div class="filter">
+          <div class="center">
+            <label for="nature">
+              <input class="radio-choice" type="radio" name="choice" id="nature" value="nature" checked>
+              <span>Nature</span>
+            </label>
+            <label for="cats">
+              <input class="radio-choice" type="radio" name="choice" id="cats" value="cats">
+              <span>Cats</span>
+            </label>
+            <label for="dogs">
+              <input class="radio-choice" type="radio" name="choice" id="dogs" value="dogs">
+              <span>Dogs</span>
+            </label>
+            <label for="cars">
+              <input class="radio-choice" type="radio" name="choice" id="cars" value="cars">
+              <span>Cars</span>
+            </label>
+            <label for="Snow">
+              <input class="radio-choice" type="radio" name="choice" id="Snow" value="Snow">
+              <span>Snow</span>
+            </label>
+            <label for="christmas">
+              <input class="radio-choice" type="radio" name="choice" id="christmas" value="christmas">
+              <span>Christmas</span>
+            </label>
+            <label for="watch">
+              <input class="radio-choice" type="radio" name="choice" id="watch" value="watch">
+              <span>Watch</span>
+            </label>
+          </div>
+        </div>
+        <div id="gallery">
+
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
